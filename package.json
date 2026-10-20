@@ -1,0 +1,24 @@
+{
+  "name": "sql-injection-attack-defense-lab",
+  "version": "1.0.0",
+  "description": "Educational Lab Website for SQL Injection Attack & Defense (React + Express + MySQL Aiven)",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "db:init": "cd backend && npm run db:init",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend"
+  },
+  "keywords": [
+    "sql-injection",
+    "cybersecurity",
+    "react",
+    "express",
+    "mysql",
+    "aiven",
+    "lab"
+  ],
+  "author": "Cybersecurity Student",
+  "license": "ISC"
+}

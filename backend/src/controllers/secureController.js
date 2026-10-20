@@ -97,9 +97,8 @@ async function searchPhones(req, res) {
   try {
     const [rows] = await pool.execute(preparedSql, queryParams);
 
-    // Rà soát đảm bảo không bao giờ có sản phẩm status = 'off'
     const hiddenItems = rows.filter(phone => phone.status === 'off');
-    const hasExposedHidden = hiddenItems.length > 0; // Luôn luôn là false trong Secure mode
+    const hasExposedHidden = hiddenItems.length > 0; 
 
     return res.status(200).json({
       success: true,

@@ -26,6 +26,7 @@ CREATE TABLE phones (
     color VARCHAR(50),
     quantity INT NOT NULL DEFAULT 0,
     status ENUM('on', 'off') NOT NULL DEFAULT 'off',
+    image VARCHAR(255),
     description TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
